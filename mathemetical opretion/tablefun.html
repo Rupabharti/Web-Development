@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .cal{ 
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div>
+        <table border="1"> 
+            
+                <tr>
+                    <th> enter first number</th>
+                    <td><input type="text" name=" first" id="1"></td>
+                </tr>
+                <tr>
+                    <th> enter second number</th>
+                    <td><input type="text" name="second" id="2"></td>
+                </tr>
+                <div class= "cal">
+                <tr>
+                    <input type="button" value="+"  onclick="add();">
+                    <input type="button" value="-"   onclick="sub();">
+                    <input type="button" value="*"   onclick="mul();">
+                    <input type="button" value="/"   onclick="div();">
+                </tr>
+            </div>
+                
+            
+         </table>
+        </div>
+    </center>
+    
+</body>
+<script>
+    function add()
+    {
+        
+        a=document.getElementById("1").value;
+        b=document.getElementById("2").value;
+        a=parseInt(a);
+        b=parseInt(b);
+        c=a+b;
+        alert(c);   
+    
+    }
+    function sub()
+    {
+        
+        a=document.getElementById("1").value;
+        b=document.getElementById("2").value;
+        a=parseInt(a);
+        b=parseInt(b);
+        c=a-b;
+        alert(c);   
+    
+    }
+    function mul()
+    {
+        
+        a=document.getElementById("1").value;
+        b=document.getElementById("2").value;
+        a=parseInt(a);
+        b=parseInt(b);
+        c=a*b;
+        alert(c);   
+    
+    }
+    function div()
+    {
+        
+        a=document.getElementById("1").value;
+        b=document.getElementById("2").value;
+        a=parseInt(a);
+        b=parseInt(b);
+        c=a/b;
+        alert(c);   
+    
+    }
+</script>
+</html>
